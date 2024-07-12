@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,73 +12,146 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <title>Vercel HTML Starter</title>
+    <title>Portfolio</title>
     <meta
       name="description"
       content="High-performance HTML based website template."
     />
   </head>
   <body>
-    <div class="main">
-      <div class="main-page">
-        <div class="text">
-          <h2>Me chamo Jackson e sou um:</h2>
-          <h1>
-            Desenvolvedor<br />
-            <div class="web-icons">
-              Web
-              <div class="icons">
-                <div class="icon">
-                  <a href="https://github.com/JackDev085" target="_blank">
-                    <img src="assets/imgs/github.png" alt="github icon" />
-                  </a>
-                </div>
-                <div class="icon">
-                  <a href="https://www.linkedin.com/in/jackson-nascimento-bb4454205/" target="_blank">
-                    <img src="assets/imgs/linkedin.png" alt="linkedin icon" />
-                  </a>
-                </div>
-                <div class="icon">
-                  <a href="https://www.instagram.com/imdevjack/" target="_blank">
-                    <img src="assets/imgs/instagram.png" alt="instagram icon" />
-                  </a>
-                </div>
+    
+    <header class="header">
+      <div class="logo">
+          <h2>jackson</h2>
+          <p class="right">L O R R A N</p>
+      </div>
+      <div class="nav">
+          <ul>
+              <li><a class="white" href="#projetos">Projetos</a></li>
+              <li><a class="black" href="#experiencia">Experiência</a></li>
+          </ul>
+      </div>
+  </header>
+  <div class="main">
+      <section class="me">
+          <img src="imgs/foto.png" alt="">
+          <div class="apresentacao">
+              <h1>Jackson Lorran</h1>
+              <h2 class="texto_impactante">
+                  Faço Código & <span class="contraste">Curto a Vida </span> 🍿
+              </h2>
+          </div>
+
+          <p class="center">
+              Sou um desenvolvedor web full stack, com foco em desenvolvimento de sites e aplicações web. Tenho
+              experiência com frameworks como Django, React e Flask. Estou sempre em busca de aprender novas
+              tecnologias e aprimorar minhas habilidades de programação.
+          </p>
+          <a class="button">Contate me</a>
+      </section>
+
+  </div>
+
+  <div id="projetos" class="projetos">
+      <div class="apresentacao">
+          <h2>Projetos</h2>
+          <h3 class="texto_impactante_1">
+              <span class="contraste">Explore agora</span>
+          </h3>
+      </div>
+      <div class="cards">
+          <a href="https://ballers085-3bab2862ad19.herokuapp.com/">
+              <div class="card">
+                  <img src="imgs/proj1.jpeg" alt="">
+                  <h3>Projeto ballers085</h3>
+                  <p>Site de treinos para basquete</p>
               </div>
-            </div>
-          </h1>
-        </div>
-        <div class="links">
-          <div class="link">
-            <a href="#sobre"> Sobre </a>
-          </div>
-          <div class="link">
-            <a href="#projetos"> Projetos </a>
-          </div>
-          <div class="link">
-            <a href="#contatos"> Contato</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="sobre" class="sobre">
-      <div class="manutencao">
-        <img src="assets/imgs/manutencao.png" alt="manutencao icon" />
-        <h1>Em manutenção</h1>
-      </div>
-    </div>
+          </a>
+          <a href="https://juvtech-db4a648cbc9f.herokuapp.com">
+              <div class="card">
+                  <img src="imgs/proj2.jpeg" alt="">
+                  <h3>Projeto juvtech</h3>
+                  <p>Ferramentas para monitores</p>
+              </div>
+          </a>
 
-    <div id="projetos" class="projetos">
-      <div class="manutencao">
-        <img src="assets/imgs/manutencao.png" alt="manutencao icon" />
-        <h1>Em manutenção</h1>
+          <a href="#">
+              <div class="card">
+                  <img src="imgs/proj_3.jpeg" alt="">
+                  <h3>Em breve</h3>
+                  <p>Em breve</p>
+              </div>
+          </a>
+          <a href="#">
+              <div class="card">
+                  <img src="imgs/proj_3.jpeg" alt="">
+                  <h3>Em breve</h3>
+                  <p>Em breve</p>
+              </div>
+          </a>
       </div>
-    </div>
 
-    <div id="contatos" class="contato">
-      <div class="manutencao">
-        <img src="assets/imgs/manutencao.png" alt="manutencao icon" />
-        <h1>Em manutenção</h1>
+  </div>
+
+  <div id="experiencia" class="experiencia">
+      <div class="apresentacao">
+          <h2>Experiência</h2>
+          <h3 class="texto_impactante_1">
+              <span class="contraste">Explore agora</span>
+          </h3>
       </div>
-    </div>
+      <div class="exeperiencias">
+          <div class="card_experiencia">
+              <h3>Freelance projeto Ballers085</h3>
+              <p>Projeto pessoal para ofertar treinos de basquete de forma gratuita (por enquanto). Posteriormente
+                  podendo escalar para hospedar treinos de outros profissionais.
+              </p>
+              <div class="tecnologias_usadas">
+                  <span data-text="Python" class="tecnologia">Python</span>
+                  <span data-text="Django" class="tecnologia">Django</span>
+                  <span data-text="PostgreSQL" class="tecnologia">PostgreSQL</span>
+                  <span data-text="Heroku" class="tecnologia">Heroku</span>
+
+                  <span data-text="Html" class="tecnologia">Html</span>
+                  <span data-text="Css" class="tecnologia">Css</span>
+              </div>
+          </div>
+          <div class="card_experiencia">
+              <h3>Programa futuros - juvtech / <span class="empresa">Instituto Cuca</span></h3>
+              <p>Neste projeto, nós, monitores de tecnologia, estamos sendo preparados para o mercado de trabalho.
+                  Seguindo uma linha de estudo estruturada, já aprendemos sobre lógica de programação com JavaScript
+                  e, atualmente, estamos desenvolvendo projetos simples focados no frontend.</p>
+              <div class="tecnologias_usadas">
+                  <span data-text="Javascript" class="tecnologia">Javascript</span>
+                  <span data-text="Mysql" class="tecnologia">Mysql</span>
+                  <span data-text="Html" class="tecnologia">Html</span>
+                  <span data-text="Css" class="tecnologia">Css</span>
+              </div>
+          </div>
+          <div class="card_experiencia">
+              <h3>Monitor de tecnologia / <span class="empresa">Instituto Cuca</span></h3>
+              <p>
+                  Como monitor de programação, tive experiência prática na utilização de conceitos como POO
+                  (Programação Orientada a Objetos), estruturas de dados, lógica de programção e tudo isso com ênfase
+                  na linguagem Java. Além disso, desenvolvi um projeto CRUD (Create, Read, Update and Delete) que
+                  envolveram o uso de banco de dados mysql.
+              </p>
+              <div class="tecnologias_usadas">
+                  <span data-text="Java" class="tecnologia">Java</span>
+                  <span data-text="Mysql" class="tecnologia">Mysql</span>
+              </div>
+          </div>
+
+      </div>
+
+  </div>
+  <div class="footer">
+      <div class="links">
+          <a href="https://github.com/JackDev085">github</a>
+          <a href="https://www.linkedin.com/in/jackson-nascimento-bb4454205/">linkedin</a>
+          <a href="https://www.instagram.com/imdevjack/">instagram</a>
+
+      </div>
+  </div>
   </body>
 </html>
