@@ -35,7 +35,6 @@ p{
 }
 .main{
   display: flex;
-  align-items: center;
   height: 100vh;
   max-width: 50rem;
   margin: 0 auto;
@@ -97,8 +96,8 @@ p{
   padding: 0.5rem;
   border-radius: 10px;
   font-weight: medium;
-
 }
+
 .button{
   border-radius: 3rem;
   border: 1px solid #585858;
@@ -113,7 +112,6 @@ p{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
   max-width: 50rem;
   margin: 0 auto;
 }
@@ -150,7 +148,7 @@ p{
   height: 15rem;
 }
 .card:hover{
-  border: 1px solid white;
+  outline: 1px solid white;
 }
 .cards h3{
   font-weight: 500;
@@ -173,6 +171,7 @@ p{
 .tecnologias_usadas{
   display: flex;
   gap: 0.5rem;
+  flex-wrap: wrap;
 }
 .experiencias{
   display: flex;
@@ -300,6 +299,11 @@ p{
     height: 10rem;
   }
 
+}
 
+@media (min-height: 700px) {
+  .main{
+   align-items: center;
+  }
 
 }
