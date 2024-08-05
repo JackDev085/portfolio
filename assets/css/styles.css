@@ -40,6 +40,10 @@ p{
   margin: 0 auto;
 }
 
+#contact-button:hover{
+  outline: #9c83ff 3px solid;
+
+}
 .center{
   text-align: center;
 }
@@ -90,12 +94,22 @@ p{
   padding: 0.5rem;
   font-weight: medium;
 }
+
+.white:hover{
+  border: none;
+  outline: #9c83ff 3px solid;
+}
+
 .black{
   background-color: #ffffff;
   color:black;
   padding: 0.5rem;
   border-radius: 10px;
   font-weight: medium;
+}
+.black:hover{
+  border: none;
+  outline: #9c83ff 3px solid;
 }
 
 .button{
@@ -148,7 +162,32 @@ p{
   height: 15rem;
 }
 .card:hover{
-  outline: 1px solid white;
+  outline: #9c83ff 3px solid;
+  border-radius: 1rem;
+}
+.outline{
+  animation: pulse 2s infinite ;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.back_to_top{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  scale: 2;
 }
 .cards h3{
   font-weight: 500;
@@ -238,6 +277,9 @@ p{
   font-weight: bold;
 }
 .links{
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem;
   display: flex;
   justify-content: center;
   gap: 1rem;
