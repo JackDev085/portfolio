@@ -1,3 +1,6 @@
+<?php
+
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -41,9 +44,7 @@
             </div>
 
             <p class="center">
-                Sou um desenvolvedor web full stack, com foco em desenvolvimento de sites e aplicações web. Tenho
-                experiência com frameworks como Django, React e Flask. Estou sempre em busca de aprender novas
-                tecnologias e aprimorar minhas habilidades de programação.
+                Sou um desenvolvedor web em formação. Tenho conhecimentos com sistemas operacionais linux e já fiz alguns projetos com o frameweork Django. Atualmente estou estudando a linguagem PHP e aprendendo cada vez mais sobre linux.
             </p>
             <a href="#contatos" class="button" id="contact-button">Contate me</a>
         </section>
@@ -87,8 +88,6 @@
                     <p>Resposítório no Github</p>
                 </div>
             </a>
-
-
         </div>
 
     </div>
@@ -101,6 +100,18 @@
             </h3>
         </div>
         <div class="exeperiencias">
+
+        <div class="card_experiencia">
+                <h3>Estagiário em suporte de sistema</h3>
+                <p>Atuo no suporte de um sistema, conversando diretamente com o cliente e resolvendo problemas ou dúvidas com os clientes sobre o funcionamento do sistema.
+                </p>
+                <div class="tecnologias_usadas">
+                    <span data-text="Php" class="tecnologia">Php</span>
+                    <span data-text="Mysql" class="tecnologia">Mysql</span>
+                    <span data-text="Linux" class="tecnologia">linux</span>
+                </div>
+            </div>
+
             <div class="card_experiencia">
                 <h3>Freelance projeto Ballers085</h3>
                 <p>Projeto pessoal para ofertar treinos de basquete de forma gratuita (por enquanto). Posteriormente
@@ -165,3 +176,4 @@
 </body>
 
 </html>
+
