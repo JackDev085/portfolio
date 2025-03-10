@@ -155,18 +155,22 @@ p {
   gap: 3rem;
 }
 .cards img {
-  border-radius: 1rem;
+  border-radius: 5px;
 }
 .cards img {
-  width: 15rem;
-  height: 15rem;
+  max-width: 500px;
 }
 .card:hover {
   outline: #9c83ff 3px solid;
-  border-radius: 1rem;
+  border-radius: 5px;
 }
 .outline {
   animation: pulse 2s infinite;
+}
+.card {
+  border-radius: 5px;
+  border: 1px solid #727171;
+  padding: 0.1rem 0.1rem 0.5rem;
 }
 
 @keyframes pulse {
@@ -339,9 +343,15 @@ p {
   .cards {
     grid-template-columns: 1fr;
   }
-  .cards img {
-    width: 10rem;
-    height: 10rem;
+  .card {
+    width: 92%;
+    margin: 0 auto;
+  }
+  .card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
   }
 }
 
