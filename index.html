@@ -1,205 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link rel="stylesheet" href="assets/css/styles.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta property="og:title" content="Portifólio" />
+    <meta property="og:description" content="#." />
+    <meta property="og:image" content="#" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="#" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Portifólio" />
+    <meta name="twitter:description" content="#." />
+    <meta name="twitter:image" content="#" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet" />
-    <title>Portfolio</title>
-    <meta name="description" content="High-performance HTML based website template." />
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Portifólio</title>
+
 </head>
 
 <body>
-
-    <header id="header" class="header">
-        <div class="logo">
-            <h2>jackson</h2>
-            <p class="right">L O R R A N</p>
-        </div>
-        <div class="nav">
-            <ul>
-                <li><a class="white" href="#projetos">Projetos</a></li>
-                <li><a class="black" href="#experiencia">Experiência</a></li>
-            </ul>
-        </div>
-    </header>
-    <div class="main">
-        <section class="me">
-            <img src="imgs/foto.png" alt="">
-            <div class="apresentacao">
-                <h1>Jackson Lorran</h1>
-                <h2 class="texto_impactante">
-                    Faço Código & <span class="contraste">curto o processo</span> 🍿
-                </h2>
-            </div>
-
-            <p class="center">
-                Meu objetivo é me tornar um desenvolvedor backend. Tenho uma grande vontade de aprender novas
-                tecnologias e estou disposto a
-                encarar
-                novos desafios.
-            </p>
-            <a href="#contatos" class="button" id="contact-button">Contate me</a>
-        </section>
-    </div>
-
-    <div id="projetos" class="projetos">
-        <div class="apresentacao">
-            <h2>Projetos</h2>
-            <h3 class="texto_impactante_1">
-                <span class="contraste">Explore agora</span>
-            </h3>
-        </div>
-        <div class="cards">
-
-            <a href="https://bpa-no-3x3.vercel.app/">
-                <div class="card">
-                    <img src="imgs/rifa.png" alt="logo projeto">
-                    <h3>Rifa digital</h3>
-                    <p>Site para venda de uma rifa</p>
-                </div>
-            </a>
-
-            <a href="https://ballers085.com.br/">
-                <div class="card">
-                    <img src="imgs/ballers.png" alt="logo projeto">
-                    <h3>ballers085</h3>
-                    <p>Site de treinos para basquete</p>
-                </div>
-            </a>
-
-            <a href="https://memoriza.app.br/">
-                <div class="card">
-                    <img src="imgs/memoriza.png" alt="logo projeto">
-                    <h3>Flashcards memoriza (frontend)</h3>
-                    <p>Site de flashcards para treinar inglês e outras coisas</p>
-                </div>
-            </a>
-
-            <a href="https://alleyop.vercel.app/">
-                <div class="card">
-                    <img src="imgs/alleyop.png" alt="logo projeto">
-                    <h3>Alleyop</h3>
-                    <p>Catálogo de produtos</p>
-                </div>
-            </a>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
 
 
-
-            <a href="https://workout-tracker-v1.vercel.app/">
-                <div class="card">
-                    <img src="imgs/workout_tracker.png" alt="logo projeto">
-                    <h3>Workout Tracker</h3>
-                    <p>Pesquisa de exercícios</p>
-                </div>
-            </a>
-
-            <a href="https://github.com/JackDev085">
-                <div class="card">
-                    <img src="imgs/github.png" alt="logo projeto">
-                    <h3>Confira meus projetos!</h3>
-                    <p>Resposítório no Github</p>
-                </div>
-            </a>
-        </div>
-
-    </div>
-
-    <div id="experiencia" class="experiencia">
-        <div class="apresentacao">
-            <h2>Experiência</h2>
-            <h3 class="texto_impactante_1">
-                <span class="contraste">Explore agora</span>
-            </h3>
-        </div>
-        <div class="exeperiencias">
-
-            <div class="card_experiencia">
-                <h3>Estagiário em suporte de sistema</h3>
-                <p>Presto suporte ao sistema da empresa para cliente e ajudo em problemas relacionadas a erros
-                    operacionais ou dúvidas pertinentes.
-                    Participo de treinamentos internos sobre desenvolvimento backend e tecnologias na nuvem, aprimorando
-                    habilidades técnicas.
-                    Atuo na análise de erros e melhoria contínua do sistema, garantindo sua estabilidade.
-
-                </p>
-                <div class="tecnologias_usadas">
-                    <span data-text="Php" class="tecnologia">Php</span>
-                    <span data-text="Mysql" class="tecnologia">Mysql</span>
-                    <span data-text="Linux" class="tecnologia">linux</span>
-                </div>
-            </div>
-
-            <div class="card_experiencia">
-                <h3>Programa futuro - juvtech / <span class="empresa">Instituto Cuca</span></h3>
-                <p>Desenvolvi o site Ballers085 como parte de um projeto comunitário, ajudando jovens atletas a melhorar
-                    suas habilidades no basquete.
-                    Criei funcionalidades que permitem acessar treinos interativos e vídeos explicativos.
-                    Site hospedado na AWS, utilizando PHP, MySQL, Bootstrap e Git para versionamento.
-                </p>
-                <div class="tecnologias_usadas">
-                    <span data-text="Python" class="tecnologia">Python</span>
-                    <span data-text="Django" class="tecnologia">Django</span>
-                    <span data-text="PostgreSQL" class="tecnologia">PostgreSQL</span>
-                    <span data-text="Heroku" class="tecnologia">Heroku</span>
-
-                    <span data-text="Html" class="tecnologia">Html</span>
-                    <span data-text="Css" class="tecnologia">Css</span>
-                </div>
-            </div>
-            <div class="card_experiencia">
-                <h3>Programa futuros - juvtech / <span class="empresa">Instituto Cuca</span></h3>
-                <p>Neste projeto, nós, monitores de tecnologia, estamos sendo preparados para o mercado de trabalho.
-                    Seguindo uma linha de estudo estruturada, já aprendemos sobre lógica de programação com JavaScript
-                    e, atualmente, estamos desenvolvendo projetos simples focados no frontend.</p>
-                <div class="tecnologias_usadas">
-                    <span data-text="Javascript" class="tecnologia">Javascript</span>
-                    <span data-text="Mysql" class="tecnologia">Mysql</span>
-                    <span data-text="Html" class="tecnologia">Html</span>
-                    <span data-text="Css" class="tecnologia">Css</span>
-                </div>
-            </div>
-            <div class="card_experiencia">
-                <h3>Monitor de tecnologia / <span class="empresa">Instituto Cuca</span></h3>
-                <p>
-                    Como monitor de programação, tive experiência prática na utilização de conceitos como POO
-                    (Programação Orientada a Objetos), estruturas de dados, lógica de programção e tudo isso com ênfase
-                    na linguagem Java. Além disso, desenvolvi um projeto CRUD (Create, Read, Update and Delete) que
-                    envolveram o uso de banco de dados mysql.
-                </p>
-                <div class="tecnologias_usadas">
-                    <span data-text="Java" class="tecnologia">Java</span>
-                    <span data-text="Mysql" class="tecnologia">Mysql</span>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-    <div class="footer">
-        <div id="contatos" class="links">
-            <a href="https://github.com/JackDev085">github</a>
-            <a href="https://www.linkedin.com/in/jackson-nascimento-bb4454205/">linkedin</a>
-            <a href="https://www.instagram.com/imdevjack/">instagram</a>
-
-        </div>
-    </div>
-    <div class="back_to_top">
-        <a href="#header">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
-            </svg>
-        </a>
-        <script src="assets/js/main.js"></script>
 </body>
 
 </html>
