@@ -1,45 +1,46 @@
-export default function ProjetoCard(){
+export default function ProjetoCard({titulo, img, tags=[], cliente,full_name, descricao, data, role, website}) {
     return(
         <div className="projeto">
 
             <div>
-                <img className="w-full" src="/example.png" alt="" />
+                <img className="w-full  bg-gray-900" src={img} alt={"${img} imagem projeto"} />
                 
             </div>
 
             <div className="info-projeto p-5 py-13">
                 
-                <h2 className="text-3xl font-bold pb-5">
-                    Project name here
+                <h2 className="text-4xl font-bold pb-5">
+                    {titulo}
                 </h2>
 
-                <p className="pb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum enim modi quidem unde nihil dolore.</p>
+                <p className="pb-5 text-xl">{descricao}</p>
 
-                <div className="tags flex gap-2 mb-13">
-                    <span className="bg-gray-300 px-2 py-1 rounded-msm">tag one</span>
-                    <span className="bg-gray-300 px-2 py-1 rounded-msm">tag one</span>
-                    <span className="bg-gray-300 px-2 py-1 rounded-msm">tag one</span>
-                </div>
+               { tags.length > 0 && ( <div className="tags flex gap-2 mb-13 flex-wrap">
+                    {tags.map((tag,index) => (
+                        console.log(tag),
+                        <span key={index} className="bg-purple-100 text-gray-800 px-4 py-2 rounded-msm">{tag}</span>
+                    ))}
+                </div>)}
 
-                    <div className="info-projeto-core grid grid-cols-2 gap-4 my-8">
+                    <div className="info-projeto-core flex flex-col gap-4 my-8">
                         <div className="info-core">
-                            <h3 className="font-bold">Cliente</h3>
-                            <span>full name</span>
+                            <h3 className="font-bold">cliente</h3>
+                            <span>{full_name}</span>
                         </div>
 
                         <div className="info-core">
-                            <h3 className="font-bold">Date</h3>
-                            <span>march 2023</span>
+                            <h3 className="font-bold">Data</h3>
+                            <span>{data}</span>
                         </div>
 
                         <div className="info-core">
-                            <h3 className="font-bold">Role</h3>
-                            <span>role name</span>
+                            <h3 className="font-bold">Tipo</h3>
+                            <span>{role}</span>
                         </div>
 
                         <div className="info-core">
                             <h3 className="font-bold">Website</h3>
-                            <span>www.site.com</span>
+                            <span>{website}</span>
                         </div>
                     </div>
             </div>
