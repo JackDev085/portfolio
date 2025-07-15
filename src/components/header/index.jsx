@@ -4,11 +4,11 @@ export default function Header() {
     const [visivel, setVisivel] = useState(false);
 
     return (
-        <header id="header" className="flex bg-purple-900 justify-between items-center relative py-2">
-            <img onClick={()=>window.location.href="/"} className="w-16 m-2 lg:w-18 lg:mx-10 hover:cursor-pointer" src="/logo.png" alt="Bpa Logo"/>
+        <header id="header" className="flex bg-purple-900 justify-between items-center relative p-4">
+            <img onClick={()=>window.location.href="/"} className="w-16 lg:w-18 lg:mx-10 hover:cursor-pointer" src="/logo.png" alt="Bpa Logo"/>
             <img
             onClick={()=>setVisivel(!visivel)}
-                className={`w-10 m-2 mr-4 cursor-pointer lg:hidden transition-all ${visivel ? "rotate-90" : "rotate-0"}`}
+                className={`w-10 cursor-pointer lg:hidden transition-all ${visivel ? "rotate-90" : "rotate-0"}`}
                 src="/hamburg.svg"
                 alt="Menu"
             />
