@@ -1,6 +1,6 @@
 export default function ProjetoCard({titulo, img, tags=[], cliente,full_name, descricao, data, role, website}) {
     return(
-        <div className="projeto border-1 border-gray-400 rounded-sm  md:grid md:grid-cols-2">
+        <div className="projeto border-1 border-gray-400 rounded-sm">
 
             <div>
                 <img className="w-full border-b-1 border-b-gray-300 rounded-t-sm  bg-gray-900" src={img} alt={"${img} imagem projeto"} />
