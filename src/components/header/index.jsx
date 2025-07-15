@@ -4,7 +4,7 @@ export default function Header() {
     const [visivel, setVisivel] = useState(false);
 
     return (
-        <header id="header" className="flex bg-purple-900 justify-between items-center relative">
+        <header id="header" className="flex bg-purple-900 justify-between items-center relative py-2">
             <img onClick={()=>window.location.href="/"} className="w-16 m-2 lg:w-18 lg:mx-10 hover:cursor-pointer" src="/logo.png" alt="Bpa Logo"/>
             <img
             onClick={()=>setVisivel(!visivel)}
