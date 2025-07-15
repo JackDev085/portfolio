@@ -5,9 +5,10 @@ import ProjetoCard from './components/ui/CardProjeto'
 function App() {
 
   return (
-    <div className='min-h-screen w-full'>
+    <>
       <Header />
-      <div>
+    <div className='min-h-screen max-w-4xl mx-auto'>
+      <div className='max-w-7xl mx-auto px-4 py-8 grid sm:grid-cols-2 gap-2'>
         <ProjetoCard 
         titulo="Ballers085" 
         img="ballers085.png" 
@@ -41,9 +42,8 @@ function App() {
         role= "estudos" 
         website="https://memoriza.app.br/" 
         full_name="jackson" />
-      </div>
 
-      <ProjetoCard 
+         <ProjetoCard 
         titulo="Backend do rifa bpa3x3" 
         img="rifa.png" 
         tags={["backend","rifa", "fastapi"]} 
@@ -53,9 +53,13 @@ function App() {
         role= "backend" 
         website="https://backendrifa.vercel.app/" 
         full_name="bpa3x3" />
+      </div>
+
+     
 
         <Footer />
       </div>
+    </>
       
   )
 }
