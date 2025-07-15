@@ -51,7 +51,7 @@ function App() {
         descricao= "Backend da rifa do bpa3x3, onde o usuário pode comprar um número e concorrer a prêmios." 
         data="10/2/2025" 
         role= "backend" 
-        website="https://backendrifa.vercel.app/" 
+        website="https://backendrifa.vercel.app/docs" 
         full_name="bpa3x3" />
       </div>
 
