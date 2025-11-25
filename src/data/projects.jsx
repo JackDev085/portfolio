@@ -5,7 +5,7 @@ export const projects = [
     description: "Aplicação fullstack onde é disponibilizado treinos para basquete e academia.",
     tags: ["React","Tailwind","Fastapi","PostgreSQL","Sqlmodel"],
     image: "/project1.png",
-    repo: "https://github.com/seuuser/projeto1",
+    repo: "",
     demo: "https://ballers085.vercel.app/"
   },
   {
@@ -14,8 +14,8 @@ export const projects = [
     description: "Projeto fullstack para encontrar rachas de basquete. ",
     tags: ["React","Tailwind","Fastapi","PostgreSQL","Sqlmodel"],
     image: "/project2.png",
-    repo: "https://github.com/seuuser/racha-app",
-    demo: "https://racha085.vercel.app/"
+    repo: "",
+    demo: "https://racha085-frontend.vercel.app/"
 
   },
   {
@@ -24,7 +24,7 @@ export const projects = [
     description: "Projeto fullstack para um personal divulgar seus serviços. ",
     tags: ["React","Tailwind"],
     image: "/project3.png",
-    repo: "https://github.com/seuuser/racha-app",
+    repo: "",
     demo: "https://rubenspersonal.vercel.app/"
 
   }

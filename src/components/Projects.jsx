@@ -59,9 +59,9 @@ export default function Projects() {
                 <a
                   href={project.demo}
                   target="_blank"
-                  className="text-blue-400 text-sm hover:underline"
+                  className="mt-8 bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg text-white font-medium transition shadow-lg"
                 >
-                  Demo
+                  Visite o site
                 </a>
               )}
             </div>
