@@ -3,11 +3,10 @@ import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <section className="flex flex-col items-center justify-center min-h-[calc(100vh-80px)] text-center px-6">
-
       {/* Foto */}
-      <img 
-        src="/me.jpg" 
-        alt="Foto de perfil" 
+      <img
+        src="/me.png"
+        alt="Foto de perfil"
         className="w-40 h-40 rounded-full object-cover border-2 border-neutral-700 shadow-xl"
       />
 
@@ -23,9 +22,9 @@ export default function Home() {
 
       {/* Descrição */}
       <p className="max-w-xl text-neutral-400 mt-4 leading-relaxed">
-        Construo aplicações modernas, performáticas e escaláveis. 
-        Tenho experiência com frontend, backend e API REST, sempre focando na
-        melhor experiência possível para o usuário e satisfação para os clientes!
+        Desenvolvedor com +2 anos de experiência com projetos pessoais e
+        freelancers. Tenho conhecimento com tecnologias como Fastapi, React,
+        TailwindCSS, Docker e etc. Me dê uma ideia e eu levo a você uma solução!
       </p>
 
       {/* Botão */}

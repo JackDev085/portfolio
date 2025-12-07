@@ -3,16 +3,13 @@ import { projects } from "../data/projects";
 export default function Projects() {
   return (
     <section className="max-w-6xl mx-auto px-6 py-16">
-      
       {/* Título */}
-      <h2 className="text-3xl font-bold mb-10 text-center">
-        Meus Projetos
-      </h2>
+      <h2 className="text-3xl font-bold mb-10 text-center">Meus Projetos</h2>
 
       {/* Grid */}
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project) => (
-          <div 
+          <div
             key={project.id}
             className="border border-neutral-800 rounded-xl p-4 bg-neutral-900/40 hover:bg-neutral-800 transition shadow-md"
           >
@@ -45,16 +42,6 @@ export default function Projects() {
 
             {/* Links */}
             <div className="flex gap-4 mt-4">
-              {project.repo && (
-                <a
-                  href={project.repo}
-                  target="_blank"
-                  className="text-blue-400 text-sm hover:underline"
-                >
-                  Repositório
-                </a>
-              )}
-
               {project.demo && (
                 <a
                   href={project.demo}
@@ -62,6 +49,15 @@ export default function Projects() {
                   className="mt-8 bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg text-white font-medium transition shadow-lg"
                 >
                   Visite o site
+                </a>
+              )}
+              {project.repo && (
+                <a
+                  href={project.repo}
+                  target="_blank"
+                  className="mt-8 bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg text-white font-medium transition shadow-lg"
+                >
+                  Repositório
                 </a>
               )}
             </div>

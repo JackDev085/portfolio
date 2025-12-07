@@ -11,21 +11,30 @@ export default function Header() {
       {/* HEADER FIXO */}
       <header className="w-full bg-black text-white py-4 px-6 border-b border-neutral-800 fixed top-0 left-0 z-50">
         <div className="max-w-6xl mx-auto flex items-center justify-between">
-
           {/* LOGO */}
           <Link to="/" className="flex items-center gap-2">
-            <img
-              src={LOGO}
-              alt="Logo"
-              className="h-12 w-auto object-contain"
-            />
+            <img src={LOGO} alt="Logo" className="h-12 w-auto object-contain" />
           </Link>
 
           {/* MENU DESKTOP */}
           <nav className="hidden md:flex gap-8 text-lg">
-            <Link className="hover:text-red-500 transition" to="/">Início</Link>
-            <Link className="hover:text-red-500 transition" to="/projects">projetos</Link>
-            <Link className="hover:text-red-500 transition" to="/contacts">Contato</Link>
+            <Link className="hover:text-red-500 transition" to="/">
+              Início
+            </Link>
+            <Link className="hover:text-red-500 transition" to="/projects">
+              projetos
+            </Link>
+            <Link className="hover:text-red-500 transition" to="/contacts">
+              Contato
+            </Link>
+
+            <a
+              href="/resumo.pdf"
+              className="hover:text-red-500 transition"
+              download={true}
+            >
+              Baixar currículo
+            </a>
           </nav>
 
           {/* BOTÃO HAMBÚRGUER (MOBILE) */}
@@ -56,7 +65,11 @@ export default function Header() {
               strokeWidth="2"
               viewBox="0 0 24 24"
             >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
             </svg>
           </button>
         </div>
@@ -85,6 +98,14 @@ export default function Header() {
           >
             Contato
           </Link>
+
+          <a
+            href="/resumo.pdf"
+            className="hover:text-red-500 transition"
+            download={true}
+          >
+            Baixar currículo
+          </a>
         </nav>
       </div>
 
