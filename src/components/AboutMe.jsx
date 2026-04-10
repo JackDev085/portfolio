@@ -45,9 +45,10 @@ export default function AboutMe() {
             </h2>
 
             <p className="text-neutral-400 text-lg leading-relaxed mt-4">
-              Desenvolvedor fullstack com foco em desenvolvimento web.
-              Graduando em Engenharia de telecomunicações na Universidade Federal do Ceará e
-              estou imerso na área de tecnologia desde 2022.
+              Desenvolvedor full stack com foco em aplicações web, atualmente
+              graduando em Engenharia de Telecomunicações pela Universidade Federal do Ceará.
+              Atua na área de tecnologia desde 2022, com dedicação contínua ao aprimoramento
+              técnico e à entrega de soluções eficientes, modernas e orientadas à melhor experiência do cliente.
             </p>
           </div>
         </div>

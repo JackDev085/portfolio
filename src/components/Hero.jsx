@@ -91,11 +91,10 @@ export default function Hero() {
                 key={i}
                 onClick={() => setCurrent(i)}
                 aria-label={`Ir para projeto ${i + 1}`}
-                className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
-                  i === current
+                className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${i === current
                     ? "bg-blue-500 scale-110"
                     : "bg-neutral-600 hover:bg-neutral-400"
-                }`}
+                  }`}
               />
             ))}
           </div>
