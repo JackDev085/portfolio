@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom"; // Caso use React Router
 
 const LOGO = "/logo.svg";
 
@@ -9,28 +8,27 @@ export default function Header() {
   return (
     <>
       {/* HEADER FIXO */}
-      <header className="w-full bg-black text-white py-4 px-6 border-b border-neutral-800 fixed top-0 left-0 z-50">
-        <div className="max-w-6xl mx-auto flex items-center justify-between">
+      <header className="w-full bg-black/80 backdrop-blur-md text-white py-4 px-6 border-b border-neutral-800 fixed top-0 left-0 z-50">
+        <div className="max-w-7xl mx-auto flex items-center justify-between">
           {/* LOGO */}
-          <Link to="/" className="flex items-center gap-2">
+          <a href="#hero" className="flex items-center gap-2">
             <img src={LOGO} alt="Logo" className="h-12 w-auto object-contain" />
-          </Link>
+          </a>
 
           {/* MENU DESKTOP */}
           <nav className="hidden md:flex gap-8 text-lg">
-            <Link className="hover:text-red-500 transition" to="/">
+            <a className="hover:text-blue-400 transition" href="#hero">
               Início
-            </Link>
-            <Link className="hover:text-red-500 transition" to="/projects">
-              projetos
-            </Link>
-            <Link className="hover:text-red-500 transition" to="/contacts">
+            </a>
+            <a className="hover:text-blue-400 transition" href="#projetos">
+              Projetos
+            </a>
+            <a className="hover:text-blue-400 transition" href="#contato">
               Contato
-            </Link>
-
+            </a>
             <a
               href="/resumo.pdf"
-              className="hover:text-red-500 transition"
+              className="hover:text-blue-400 transition"
               download={true}
             >
               Baixar currículo
@@ -75,33 +73,33 @@ export default function Header() {
         </div>
 
         <nav className="flex flex-col p-6 text-lg gap-4">
-          <Link
-            to="/"
+          <a
+            href="#hero"
             onClick={() => setOpen(false)}
-            className="hover:text-red-500 transition"
+            className="hover:text-blue-400 transition"
           >
             Início
-          </Link>
+          </a>
 
-          <Link
-            to="/projects"
+          <a
+            href="#projetos"
             onClick={() => setOpen(false)}
-            className="hover:text-red-500 transition"
+            className="hover:text-blue-400 transition"
           >
             Projetos
-          </Link>
+          </a>
 
-          <Link
-            to="/contacts"
+          <a
+            href="#contato"
             onClick={() => setOpen(false)}
-            className="hover:text-red-500 transition"
+            className="hover:text-blue-400 transition"
           >
             Contato
-          </Link>
+          </a>
 
           <a
             href="/resumo.pdf"
-            className="hover:text-red-500 transition"
+            className="hover:text-blue-400 transition"
             download={true}
           >
             Baixar currículo
