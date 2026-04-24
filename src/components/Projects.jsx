@@ -2,22 +2,28 @@ import { ArrowUpRight } from "lucide-react";
 
 const PROJECTS = [
   {
-    img: "/project1.png",
-    title: "Landing page para psicólogo",
-    desc: "Visão geral do profissional com informações sobre sua abordagem terapêutica, serviços oferecidos e formas de contato.",
-    link: "https://athuspsi.vercel.app",
+    img: "/gxcorp.png",
+    title: "Gxcorp",
+    desc: "Landing page corporativa focada em autoridade visual e apresentação estratégica de serviços da empresa Gxcorp.",
+    link: "https://gxcorp.vercel.app",
   },
   {
-    img: "/project3.png",
-    title: "Site Para Personal",
-    desc: "Landing page moderna para personal trainer, com visão geral do profissional e seus serviços.",
+    img: "/athuspsi.png",
+    title: "Athus Psi",
+    desc: "Presença digital estratégica para psicólogo, unindo design com autenticidade à clareza na exposição das frentes clínicas.",
+    link: "https://athuspsi.com.br",
+  },
+  {
+    img: "/josuepsi.png",
+    title: "Josué Araújo",
+    desc: "Presença digital estratégica para psicólogo, unindo design minimalista à clareza na exposição das frentes clínicas.",
+    link: "https://josuearaujo.com.br",
+  },
+  {
+    img: "/rubens.png",
+    title: "Rubens Personal",
+    desc: "Hub de performance para personal trainer, destacando metodologia de treino, consultoria online e programa de treino.",
     link: "https://rubenspersonal.vercel.app",
-  },
-  {
-    img: "/project2.png",
-    title: "Site institucional BpaDl",
-    desc: "Site para uma clube esportivo, com visão geral do clube e esportes oferecidos.",
-    link: "https://bpace.vercel.app",
   },
 
 ];
