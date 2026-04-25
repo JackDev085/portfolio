@@ -24,11 +24,11 @@ export default function AboutMe() {
           {/* Foto */}
           <div className="flex-shrink-0">
             <div className="relative">
-              <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-blue-500 to-blue-700 blur-sm opacity-60" />
+              <div className="absolute -inset-1 md:-inset-2 rounded-full md:rounded-[2rem] bg-gradient-to-br from-blue-500 to-blue-700 blur-md md:blur-lg opacity-50 md:opacity-60" />
               <img
                 src="/me.png"
                 alt="Jackson"
-                className="relative w-40 h-40 sm:w-48 sm:h-48 rounded-full object-cover border-2 border-neutral-800"
+                className="relative w-40 h-40 sm:w-48 sm:h-48 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full md:rounded-[2rem] object-cover border-2 border-neutral-800 shadow-2xl"
               />
             </div>
           </div>

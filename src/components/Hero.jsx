@@ -63,7 +63,6 @@ export default function Hero() {
   };
 
   const handleImageClick = (src) => {
-    if (Math.abs(dragOffset) > 5) return;
     setSelectedImage(src);
     setIsModalOpen(true);
   };
@@ -87,7 +86,7 @@ export default function Hero() {
         {/* ── LADO ESQUERDO ── */}
         <div className="flex flex-col gap-6 max-w-xl z-10">
           <span className="text-blue-400 font-medium tracking-widest uppercase text-sm">
-            Desenvolvedor Fullstack
+            Crie sua presença digital
           </span>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
@@ -99,7 +98,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-neutral-400 text-lg leading-relaxed">
-            Crio soluções para impulsionar seu negócio e alcançar mais clientes.
+            Desenvolvo soluções para impulsionar seu negócio e alcançar mais clientes.
             Do design ao deploy, transformo ideias em produtos digitais
             completos.
           </p>
@@ -122,7 +121,7 @@ export default function Hero() {
 
         {/* ── LADO DIREITO (CARROSSEL) ── */}
         <div className="relative z-10 flex flex-col items-center lg:items-center w-full">
-          
+
 
           {/* Carousel Viewport */}
           <div
@@ -171,11 +170,10 @@ export default function Hero() {
                 key={i}
                 onClick={() => setCurrent(i)}
                 aria-label={`Ir para projeto ${i + 1}`}
-                className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
-                  i === current
-                    ? "bg-blue-500 scale-125 w-6"
-                    : "bg-neutral-600 hover:bg-neutral-400"
-                }`}
+                className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${i === current
+                  ? "bg-blue-500 scale-125 w-6"
+                  : "bg-neutral-600 hover:bg-neutral-400"
+                  }`}
               />
             ))}
           </div>
@@ -195,7 +193,7 @@ export default function Hero() {
           >
             <X size={24} />
           </button>
-          
+
           <div
             className="relative w-full max-w-5xl h-full flex items-center justify-center"
             onClick={() => setIsModalOpen(false)}
